@@ -1,2 +1,2 @@
-# Python-Exercises
-Some basic programs written for purpose of practice.
+# Python Exercises
+Some basic python programs written for purpose of practice.
