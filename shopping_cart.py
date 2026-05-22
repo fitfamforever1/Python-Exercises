@@ -1,17 +1,18 @@
-# Shopping Cart
-
-# Variable to store the shopping list
 list = []
+price = []
+quantity = []
+total = 0
 
-# Loop to continuously ask the user for items until they type 'done'
 while True:
-    item = input("Enter an item name to add it to shopping list. (Type 'done' to finish): ")
-    if item == "done":
-        for item in list:
-            print(f"- {item}")
+    item = input("Enter the name of the item (or 'done' to finish): ")
+    if item == 'done':
+        for x in range(len(list)):
+            print(f"- {list[x]}: ${price[x]:.2f} x {quantity[x]}")
+            total += price[x] * quantity[x]
+        print(f"Total cost: ${total:.2f}")
         break
-    elif item in list:
-        print(f"{item} is already in the shopping list.")
-    else:
-        list.append(item)
-        print(f"{item} has been added to the shopping list.")
+    cost = float(input("Enter the price of the item: "))
+    q = int(input("Enter the quantity of the item: "))
+    list.append(item)
+    price.append(cost)
+    quantity.append(q)
