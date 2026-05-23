@@ -1,5 +1,5 @@
 # Small Caps Converter
-# This script converts regular text to small caps using Unicode characters.
+# This script converts regular text to small caps.
 
 # Function to convert text to small caps
 def smallcap(text):
